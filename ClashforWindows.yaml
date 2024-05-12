@@ -82,6 +82,7 @@ proxy-groups:
   - {name: 🍎 苹果服务, <<: *a3}
   - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
   - {name: 🤖 OpenAi,   type: select, proxies: [🇺🇲 美国节点]}
+  - {name: 📹 Youtube油管, <<: *a3}
   - {name: 🎬 国际媒体, <<: *a3}
   - {name: 🌌 谷歌服务, <<: *a3}
   - {name: 📟 电报消息, <<: *a3}
