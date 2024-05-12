@@ -99,7 +99,7 @@ proxy-groups:
   - {name: 🇨🇳 台湾节点, <<: *a4, filter: "台|湾|TW|(?i)Taiwan"      }             # a4更改为a2，即为手动选择
   - {name: 🇺🇲 美国节点, <<: *a4, filter: "(?i)States|American"}             # a4更改为a2，即为手动选择
   - {name: 🇸🇬 狮城节点, <<: *a4, filter: "新|坡|SG|(?i)Singapore"    }  
-  - {name: EMBY 节点, <<: *a3, filter: "专用|0.01"}               # a4更改为a2，即为手动选择
+  - {name: EMBY 节点, <<: *a4, filter: "专用|0.01"}               # a4更改为a2，即为手动选择
 
 # 分流规则 
 rule-providers:
