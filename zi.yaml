@@ -127,7 +127,7 @@ rules:
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
   - RULE-SET,Download,DIRECT
-  - RULE-SET，Youtube,📹 Youtube油管
+  - RULE-SET,Youtube,📹 Youtube油管
   - RULE-SET,Ad,🆎 AdBlock
   - RULE-SET,OpenAi,🤖 OpenAi
   - RULE-SET,BiliBili,📺 哔哩哔哩
@@ -138,11 +138,11 @@ rules:
   - RULE-SET,Microsoft, 🌏 全球加速
   - RULE-SET,Google,🌌 谷歌服务
   - RULE-SET,Telegram,📟 电报消息
-  - RULE-SET,Twitter,🌏 全球加速
+  - RULE-SET,Twitter,🐦 推特服务
   - RULE-SET,Game,🎮 游戏平台
   - RULE-SET,ProxyLite,🌏 全球加速
   - RULE-SET,ChinaIP,DIRECT
-  - RULE-SET,EMBY,EMBY
+  - RULE-SET,EMBY,❤️EMBY
   - GEOIP,CN,DIRECT
   - MATCH,🐟 兜底分流
 
