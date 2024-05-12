@@ -59,3 +59,7 @@ payload:
   - DOMAIN-KEYWORD,jmsooo
   - DOMAIN-KEYWORD,odysseyplus
   - PROCESS-NAME,com.mb.android
+
+# > aca
+  - DOMAIN,emby.aca.best
+  - DOMAIN,porn.aca.best
