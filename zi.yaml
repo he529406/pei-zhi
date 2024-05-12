@@ -119,7 +119,7 @@ rule-providers:
   Twitter:     {<<: *a6, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml,   }                
   Game:        {<<: *a6, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml,      }                   
   ChinaIP:     {<<: *a7, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml,  }                                  
-  EMBY:        {<<: *a5, url: https://raw.githubusercontent.com/he529406/pei-zhi/main/Emby.yaml,                                    }
+  EMBY:        {<<: *a5, url: https://raw.githubusercontent.com/he529406/pei-zhi/main/Emby%20(1).yaml,                                    }
   ProxyLite:   {<<: *a6, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ProxyLite/ProxyLite.yaml,      }        
 
  # 分流Policy 
