@@ -89,7 +89,7 @@ proxy-groups:
   - {name: 🐦 推特服务, <<: *a3}
   - {name: 🎮 游戏平台, <<: *a3}
   - {name: 🆎 AdBlock, type: select, proxies: [REJECT]}
-  - {name: ❤️ EMBY, type: select, proxies: [EMBY 节点]}
+  - {name: ❤️ EMBY, type: select, proxies: [EMBY 节点|HK|DIRECT]}
   - {name: 🐟 兜底分流, <<: *a3}
   
 #节点分组
