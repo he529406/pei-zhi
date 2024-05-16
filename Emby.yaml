@@ -1,4 +1,5 @@
 payload:
+  - DOMAIN-SUFFIX,misakaf.org
 
   - DOMAIN-SUFFIX, stream.ntrrr.top
   - DOMAIN-SUFFIX, stream.synn.cc
@@ -152,7 +153,6 @@ payload:
   - DOMAIN-SUFFIX,pololine.ml
 
 # > MisakaF
-  - DOMAIN-SUFFIX,misakaf.org
 
 # > GfwEmby
   - DOMAIN-SUFFIX,gfwemby.org
