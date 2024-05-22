@@ -64,7 +64,7 @@ proxies: null
 proxy-groups:
 #分流分组
   - {name: 🚀 手动切换, <<: *a2}
-  - {name: ❤️ EMBY, type: select, proxies: [EMBY 节点,DIRECT,倍率 节点]}
+  - {name: ❤️ EMBY, type: select, proxies: [EMBY 节点,DIRECT,倍率节点]}
   - {name: 🌏 全球加速, <<: *a3}
   - {name: 🍎 苹果服务, <<: *a3}
   - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
