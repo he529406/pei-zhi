@@ -7,7 +7,7 @@ external-controller: :9090
 proxies:
   - {name: 🇸🇬 新加坡01, server: tunnel-07312159.520300.xyz, port: 12293, type: ss, cipher: aes-256-gcm, password: pC1uBAlszU4WQ16je2FnXiIqRQ2wiPj0SY7hfknB6VKn}
   - {name: 🇭🇰 香港01, server: tunnel-07312159.520300.xyz, port: 19876, type: ss, cipher: aes-256-gcm, password: qOVX4pwm0PvmN7azuYDnXl1qwHLIU27NHwaUyCkox3mH}
-  - {name: 🇭🇰 香港02, server: tunnel-07312159.520300.xyz, port: 14840, type: ss, cipher: aes-256-gcm, password: 4FX5zVd0w3fEVT9I99BtYqeEsiEuXC2Tg7f3yFhprsxv}
+  - {name: 🇭🇰 香港02, server: tunnel-07312159.520300.xyz, port: 14840, type: ss, cipher: aes-256-gcm, password: XBoHNDp9RDrbw7qZgj9mMxPis7MQwWkRVZswwBXmGlmb}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
