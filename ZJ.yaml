@@ -5,11 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 香港01 2.5x, server: tunnel-08301515.520300.xyz, port: 18939, type: ss, cipher: aes-256-gcm, password: 0c29jbjnme}
+  - {name: 🇭🇰 香港01 2.5x, server: tunnel-07312159.520300.xyz, port: 18939, type: ss, cipher: aes-256-gcm, password: 0c29jbjnme}
   
-  - {name: 🇯🇵 日本01 2.5x, server: tunnel-08301515.520300.xyz, port: 18334, type: ss, cipher: aes-256-gcm, password: DIkJppkciD}
+  - {name: 🇯🇵 日本01 2.5x, server: tunnel-07312159.520300.xyz, port: 18334, type: ss, cipher: aes-256-gcm, password: DIkJppkciD}
 
-  - {name: 🇸🇬 新加坡01 2.5x, server: tunnel-08301515.520300.xyz, port: 11395, type: ss, cipher: aes-256-gcm, password: ewBqWgxTrA}
+  - {name: 🇸🇬 新加坡01 2.5x, server: tunnel-07312159.520300.xyz, port: 11395, type: ss, cipher: aes-256-gcm, password: ewBqWgxTrA}
 
 
 proxy-groups:
