@@ -5,9 +5,9 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 香港01 2.5x, server: 141.11.219.94, port: 15999, type: ss, cipher: aes-256-gcm, password: jobUXk9Zq/Ck2W8Sd5ntWGP/0m9ZsaNyV7/sAC0u0XM=, udp: true}
+  - {name: 🇭🇰 香港01 2.5x, server: tunnel-07312159.520300.xyz, port: 15653, type: ss, cipher: aes-256-gcm, password: jobUXk9Zq/Ck2W8Sd5ntWGP/0m9ZsaNyV7/sAC0u0XM=, udp: true}
   - {name: 🇭🇰 香港02 0x, server: 141.11.219.94, port: 12333, type: vmess, uuid: 9df0452f-496e-4a3c-9543-598fcc45a3d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9df0452f}, udp: true}
-  - {name: 🇯🇵 日本01 2.5x, server: 157.254.252.66, port: 15999, type: ss, cipher: aes-256-gcm, password: /cRS3elDJE7fPJoU3QMn+INjgC7Uy+QN0bXg4ILtZcs=, udp: true}
+  - {name: 🇯🇵 日本01 2.5x, server: tunnel-07312159.520300.xyz, port: 18334, type: ss, cipher: aes-256-gcm, password: /cRS3elDJE7fPJoU3QMn+INjgC7Uy+QN0bXg4ILtZcs=, udp: true}
   - {name: 🇯🇵 日本02 0x, server: 157.254.252.66, port: 12333, type: vmess, uuid: 1c278846-b565-490c-90bf-01d36191836f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1c278846}, udp: true}
 
 
