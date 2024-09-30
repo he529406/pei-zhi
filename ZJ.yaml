@@ -5,6 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 🇭🇰 香港01 0x, server: 191.101.132.102, port: 12333, type: vmess, uuid: ba8c904e-a21e-4bfc-a6eb-30d9911c5557, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ba8c904e, headers: {Host: hk.hesurf.cn}}, udp: true}
   - {name: 🇯🇵 日本01 15x, server: shjp1-08051751.520300.xyz, port: 18334, type: ss, cipher: aes-256-gcm, password: /cRS3elDJE7fPJoU3QMn+INjgC7Uy+QN0bXg4ILtZcs=, udp: true}
   - {name: 🇯🇵 日本02 0x, server: 157.254.252.66, port: 12333, type: vmess, uuid: 1c278846-b565-490c-90bf-01d36191836f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1c278846, headers: {Host: jp.hesurf.cn}}, udp: true}
   - {name: 🇸🇬 新加坡01 10x, server: gdhk1-07312200.520300.xyz, port: 38263, type: ss, cipher: aes-256-gcm, password: r9r2Q5iT9pIVTL/OUsPFsHzKbzZSpYGXmc47AwXjiag=, udp: true}
