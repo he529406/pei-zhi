@@ -6,8 +6,8 @@ log-level: info
 external-controller: :9090
 proxies:
 
-  - {name: 🇭🇰 香港01 0x, server: hk.hesurf.cn, port: 12333, type: vmess, uuid: 7e76268c-ca98-4c1f-c3fc-98195238d631, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /7e76268c, headers: {Host: hk.hesurf.cn}}, udp: true}
-  - {name: 🇯🇵 日本01 0x, server: jp.hesurf.cn, port: 12333, type: vmess, uuid: 936e646a-1d82-4c86-b065-6dff1413e08e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /936e646a, headers: {Host: jp.hesurf.cn}}, udp: true}
+  - {name: 🇭🇰 香港01 0x, server: 191.101.132.102, port: 12333, type: vmess, uuid: 7e76268c-ca98-4c1f-c3fc-98195238d631, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /7e76268c, headers: {Host: hk.hesurf.cn}}, udp: true}
+  - {name: 🇯🇵 日本01 0x, server: 157.254.252.66, port: 12333, type: vmess, uuid: 936e646a-1d82-4c86-b065-6dff1413e08e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /936e646a, headers: {Host: jp.hesurf.cn}}, udp: true}
   - {name: 🇯🇵 日本02 15x, server: shjp1-08051751.520300.xyz, port: 43785, type: ss, cipher: aes-256-gcm, password: iNmoAyoqjP, udp: true}
 
 proxy-groups:
