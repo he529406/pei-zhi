@@ -8,7 +8,7 @@ proxies:
 
   - {name: 🇭🇰 香港01 0x, server: zshk.hesurf.cn, port: 12333, type: vmess, uuid: 7e76268c-ca98-4c1f-c3fc-98195238d631, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /7e76268c, headers: {Host: zshk.hesurf.cn}}, udp: true}
   - {name: 🇯🇵 日本01 0x, server: zsjp.hesurf.cn, port: 12333, type: vmess, uuid: 936e646a-1d82-4c86-b065-6dff1413e08e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /936e646a, headers: {Host: zsjp.hesurf.cn}}, udp: true}
-  - {name: 🇯🇵 日本02 15x, server: 157.254.252.66, port: 15999, type: ss, cipher: aes-256-gcm, password: iNmoAyoqjP, udp: true}
+  - {name: 🇯🇵 日本02 15x, server: shjp1-08051751.520300.xyz, port: 43785, type: ss, cipher: aes-256-gcm, password: iNmoAyoqjP, udp: true}
 
 proxy-groups:
   - name: 🚀 节点选择
