@@ -10,6 +10,7 @@ proxies:
   - {name: 🇭🇰 香港01 0x, server: 18.163.120.109, port: 12333, type: vmess, uuid: 832ce12d-c1cb-42b0-f4e1-a3d9c59a3530, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /832ce12d, headers: {Host: hk.hesurf.cn}}, udp: true}
   - {name: 🇯🇵 日本01 0x, server: 157.254.252.66, port: 12333, type: vmess, uuid: 160f5f21-102b-4199-c60a-0458b595be3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /160f5f21, headers: {Host: jp.hesurf.cn}}, udp: true}
   - {name: 🇯🇵 日本02 15x, server: shjp1-08051751.520300.xyz, port: 43785, type: ss, cipher: aes-256-gcm, password: SdfPrZSnMk, udp: true}
+  - {name: 🇺🇸 美国01 0x, server: 38.58.188.130, port: 12333, type: vmess, uuid: 916d467b-c93e-4bfd-dba6-9c4540690abd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /916d467b, headers: {Host: us.hesurf.cn}}, udp: true}
 
 
   
@@ -22,6 +23,7 @@ proxy-groups:
       - 🇭🇰 香港01 0x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
+      - 🇺🇸 美国01 0x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -31,6 +33,7 @@ proxy-groups:
       - 🇭🇰 香港01 0x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
+      - 🇺🇸 美国01 0x
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -40,6 +43,7 @@ proxy-groups:
       - 🇭🇰 香港01 0x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
+      - 🇺🇸 美国01 0x
   - name: 📲 电报信息
     type: select
     proxies:
@@ -48,6 +52,7 @@ proxy-groups:
       - 🇭🇰 香港01 0x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
+      - 🇺🇸 美国01 0x
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -56,6 +61,7 @@ proxy-groups:
       - 🇭🇰 香港01 0x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
+      - 🇺🇸 美国01 0x
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -64,6 +70,7 @@ proxy-groups:
       - 🇭🇰 香港01 0x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
+      - 🇺🇸 美国01 0x
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -73,6 +80,7 @@ proxy-groups:
       - 🇭🇰 香港01 0x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
+      - 🇺🇸 美国01 0x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -98,6 +106,7 @@ proxy-groups:
       - 🇭🇰 香港01 0x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
+      - 🇺🇸 美国01 0x
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
