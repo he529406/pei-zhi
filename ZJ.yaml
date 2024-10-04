@@ -4,81 +4,88 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
 proxies:
-
-  - {name: 🇭🇰 香港01 0x, server: 18.163.120.109, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: e84504fe-7838-460d-a465-098007ee26d4, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: blog.api.www.cloudflare.com, network: tcp, udp: true}
-  - {name: 🇯🇵 日本01 0x, server: 157.254.252.66, port: 443, reality-opts: {public-key: S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4}, client-fingerprint: chrome, type: vless, uuid: 6077b6a7-e1dc-4461-89d1-578e4887392c, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
-  - {name: 🇯🇵 日本02 15x, server: shjp1-08051751.520300.xyz, port: 43785, type: ss, cipher: aes-256-gcm, password: SdfPrZSnMk, udp: true}
-  - {name: 🇺🇸 美国01 0x, server: 38.58.188.130, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: 6022c4cf-1ec2-41b2-8580-bc515c745959, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: icloud.cdn-apple.com, network: tcp, udp: true}
-
-  
+  - {name: 🇭🇰 香港01, server: 18.163.120.109, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: e84504fe-7838-460d-a465-098007ee26d4, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: blog.api.www.cloudflare.com, network: tcp, udp: true}
+  - {name: 🇯🇵 日本01, server: 157.254.252.66, port: 443, reality-opts: {public-key: S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4}, client-fingerprint: chrome, type: vless, uuid: 6077b6a7-e1dc-4461-89d1-578e4887392c, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
+  - {name: 🇯🇵 日本02, server: 157.254.252.66, port: 15999, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: SdfPrZSnMk, tfo: false, udp: true}
+  - {name: 🇺🇸 美国01, server: 38.58.188.130, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: 6022c4cf-1ec2-41b2-8580-bc515c745959, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: icloud.cdn-apple.com, network: tcp, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 香港01 0x
-      - 🇯🇵 日本01 0x
-      - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
+      - 🇭🇰 香港01
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇺🇸 美国01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港01 0x
-      - 🇯🇵 日本01 0x
-      - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
+      - 🇭🇰 香港01
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇺🇸 美国01
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 香港01 0x
-      - 🇯🇵 日本01 0x
-      - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
+      - 🇭🇰 香港01
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇺🇸 美国01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港01 0x
-      - 🇯🇵 日本01 0x
-      - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
+      - 🇭🇰 香港01
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇺🇸 美国01
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 香港01 0x
-      - 🇯🇵 日本01 0x
-      - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
+      - 🇭🇰 香港01
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇺🇸 美国01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港01 0x
-      - 🇯🇵 日本01 0x
-      - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
+      - 🇭🇰 香港01
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇺🇸 美国01
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港01 0x
-      - 🇯🇵 日本01 0x
-      - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
+      - 🇭🇰 香港01
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇺🇸 美国01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -101,10 +108,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港01 0x
-      - 🇯🇵 日本01 0x
-      - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
+      - 🇭🇰 香港01
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇺🇸 美国01
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
