@@ -6,12 +6,10 @@ log-level: info
 external-controller: :9090
 proxies:
 
-
-  - {name: 🇭🇰 香港01 0x, server: 18.163.120.109, port: 12333, type: vmess, uuid: 832ce12d-c1cb-42b0-f4e1-a3d9c59a3530, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /832ce12d, headers: {Host: hk.hesurf.cn}}, udp: true}
-  - {name: 🇯🇵 日本01 0x, server: 157.254.252.66, port: 12333, type: vmess, uuid: 160f5f21-102b-4199-c60a-0458b595be3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /160f5f21, headers: {Host: jp.hesurf.cn}}, udp: true}
+  - {name: 🇭🇰 香港01, server: 18.163.120.109, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: e84504fe-7838-460d-a465-098007ee26d4, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: blog.api.www.cloudflare.com, network: tcp, udp: true}
+  - {name: 🇯🇵 日本01, server: 157.254.252.66, port: 443, reality-opts: {public-key: S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4}, client-fingerprint: chrome, type: vless, uuid: 6077b6a7-e1dc-4461-89d1-578e4887392c, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
   - {name: 🇯🇵 日本02 15x, server: shjp1-08051751.520300.xyz, port: 43785, type: ss, cipher: aes-256-gcm, password: SdfPrZSnMk, udp: true}
-  - {name: 🇺🇸 美国01 0x, server: 38.58.188.130, port: 12333, type: vmess, uuid: 916d467b-c93e-4bfd-dba6-9c4540690abd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /916d467b, headers: {Host: us.hesurf.cn}}, udp: true}
-
+  - {name: 🇺🇸 美国01, server: 38.58.188.130, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: 6022c4cf-1ec2-41b2-8580-bc515c745959, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: icloud.cdn-apple.com, network: tcp, udp: true}
 
   
 proxy-groups:
