@@ -15,6 +15,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
+  - {name: 🇭🇰 香港01, server: 149.104.11.178, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: 3cfc1e0b-1398-4b9a-a113-5388fd319c17, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: swdist.apple.com, network: tcp, udp: true}
   - {name: 🇯🇵 日本01, server: 157.254.252.66, port: 443, reality-opts: {public-key: S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4}, client-fingerprint: chrome, type: vless, uuid: 6077b6a7-e1dc-4461-89d1-578e4887392c, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: addons.mozilla.org, network: tcp, udp: true}
   - {name: 🇺🇸 美国01, server: 38.58.188.130, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: 6022c4cf-1ec2-41b2-8580-bc515c745959, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: icloud.cdn-apple.com, network: tcp, udp: true}
   - {name: 🇩🇪 德国01, server: 3.70.53.47, port: 443, reality-opts: {public-key: rwpbqas_HY8knlW0fFSIeUrjgBXHBzSNboflsLD8elA}, client-fingerprint: chrome, type: vless, uuid: 54af5239-ea89-483a-e89d-c36d1c00ea8f, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: icloud.cdn-apple.com, network: tcp, udp: true}
@@ -24,6 +25,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇭🇰 香港01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
       - 🇩🇪 德国01
@@ -33,6 +35,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 🇭🇰 香港01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
       - 🇩🇪 德国01
@@ -42,6 +45,7 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇭🇰 香港01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
       - 🇩🇪 德国01
@@ -50,6 +54,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇭🇰 香港01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
       - 🇩🇪 德国01
@@ -58,6 +63,7 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇭🇰 香港01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
       - 🇩🇪 德国01
@@ -66,6 +72,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇭🇰 香港01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
       - 🇩🇪 德国01
@@ -75,6 +82,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇭🇰 香港01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
       - 🇩🇪 德国01
@@ -100,6 +108,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇭🇰 香港01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
       - 🇩🇪 德国01
