@@ -15,10 +15,13 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇭🇰 香港01, server: 149.104.11.178, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: 3cfc1e0b-1398-4b9a-a113-5388fd319c17, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: swdist.apple.com, network: tcp, udp: true}
+  - {name: 🇭🇰 香港01, server: 162.245.220.68, port: 443, reality-opts: {public-key: IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM}, client-fingerprint: chrome, type: vless, uuid: c65c1169-7f5f-4994-a484-304dd6bc8d56, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: swdist.apple.com, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡01, server: 18.136.197.181, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: f986f228-906f-4149-cf94-9e835f1285db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: swdist.apple.com, network: tcp, udp: true}
   - {name: 🇯🇵 日本01, server: 157.254.252.66, port: 443, reality-opts: {public-key: S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4}, client-fingerprint: chrome, type: vless, uuid: 6077b6a7-e1dc-4461-89d1-578e4887392c, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: addons.mozilla.org, network: tcp, udp: true}
   - {name: 🇺🇸 美国01, server: 38.58.188.130, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: 6022c4cf-1ec2-41b2-8580-bc515c745959, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: icloud.cdn-apple.com, network: tcp, udp: true}
-  - {name: 🇩🇪 德国01, server: 3.70.53.47, port: 443, reality-opts: {public-key: rwpbqas_HY8knlW0fFSIeUrjgBXHBzSNboflsLD8elA}, client-fingerprint: chrome, type: vless, uuid: 54af5239-ea89-483a-e89d-c36d1c00ea8f, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: icloud.cdn-apple.com, network: tcp, udp: true}
+
+
+
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -26,9 +29,9 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇭🇰 香港01
+      - 🇸🇬 新加坡01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
-      - 🇩🇪 德国01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -36,9 +39,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇭🇰 香港01
+      - 🇸🇬 新加坡01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
-      - 🇩🇪 德国01
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -46,36 +49,36 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇭🇰 香港01
+      - 🇸🇬 新加坡01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
-      - 🇩🇪 德国01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇭🇰 香港01
+      - 🇸🇬 新加坡01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
-      - 🇩🇪 德国01
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🇭🇰 香港01
+      - 🇸🇬 新加坡01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
-      - 🇩🇪 德国01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇭🇰 香港01
+      - 🇸🇬 新加坡01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
-      - 🇩🇪 德国01
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -83,9 +86,9 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇭🇰 香港01
+      - 🇸🇬 新加坡01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
-      - 🇩🇪 德国01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -109,9 +112,9 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇭🇰 香港01
+      - 🇸🇬 新加坡01
       - 🇯🇵 日本01
       - 🇺🇸 美国01
-      - 🇩🇪 德国01
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
