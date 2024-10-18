@@ -15,10 +15,10 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇭🇰 香港01, server: 162.245.220.68, port: 443, reality-opts: {public-key: IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM}, client-fingerprint: chrome, type: vless, uuid: c65c1169-7f5f-4994-a484-304dd6bc8d56, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: swdist.apple.com, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡01, server: 18.136.197.181, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: f986f228-906f-4149-cf94-9e835f1285db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: swdist.apple.com, network: tcp, udp: true}
-  - {name: 🇯🇵 日本01, server: 157.254.252.66, port: 443, reality-opts: {public-key: S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4}, client-fingerprint: chrome, type: vless, uuid: 6077b6a7-e1dc-4461-89d1-578e4887392c, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: addons.mozilla.org, network: tcp, udp: true}
-  - {name: 🇺🇸 美国01, server: 38.58.188.130, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: 6022c4cf-1ec2-41b2-8580-bc515c745959, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: icloud.cdn-apple.com, network: tcp, udp: true}
+  - {name: 🇭🇰 香港01, server: 162.245.220.68, port: 443, reality-opts: {public-key: IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM}, client-fingerprint: chrome, type: vless, uuid: c65c1169-7f5f-4994-a484-304dd6bc8d56, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: swdist.apple.com, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡01, server: 18.136.197.181, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: f986f228-906f-4149-cf94-9e835f1285db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: swdist.apple.com, network: tcp, udp: true}
+  - {name: 🇯🇵 日本01, server: 157.254.252.66, port: 443, reality-opts: {public-key: S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4}, client-fingerprint: chrome, type: vless, uuid: 6077b6a7-e1dc-4461-89d1-578e4887392c, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
+  - {name: 🇺🇸 美国01, server: 38.58.188.130, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: 6022c4cf-1ec2-41b2-8580-bc515c745959, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: icloud.cdn-apple.com, network: tcp, udp: true}
 
 
 
