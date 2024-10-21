@@ -19,7 +19,7 @@ proxies:
   - {name: 🇯🇵 日本01 0x, server: 157.254.252.66, port: 443, reality-opts: {public-key: S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4}, client-fingerprint: chrome, type: vless, uuid: 6077b6a7-e1dc-4461-89d1-578e4887392c, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
   - {name: 🇺🇸 美国01 0x, server: 38.58.188.130, port: 443, reality-opts: {public-key: Z3ZGnAOdKkzJ07gR_7_0k9_iTTFP6paDOrqx1rN2LU4}, client-fingerprint: chrome, type: vless, uuid: d3adb21e-897b-4f59-d7a0-1d85efbf2d88, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
   - {name: 🇯🇵 日本02 15x, server: shjp1-08051751.520300.xyz, port: 43785, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: SdfPrZSnMk, tfo: false, udp: true}
-  - {name: 🇭🇰 香港02 15x, server: shhk1-08051752.520300.xyz, port: 51014, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: j7W2hIKj09h6U63AxupoDhR9pRjKs0PxNmczUtUIEsol, tfo: false, udp: true}
+  - {name: 🇭🇰 香港02 15x, server: shhk1-08051752.520300.xyz, port: 36602, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: j7W2hIKj09h6U63AxupoDhR9pRjKs0PxNmczUtUIEsol, tfo: false, udp: true}
   - {name: 🇺🇸 美国02 15x, server: shjp1-08051751.520300.xyz, port: 41062, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: pRjTBuiDaGrdCtKjgWoDbbKpV14fJaIP1lqhKu6cSMmW, tfo: false, udp: true}
 
 
