@@ -16,7 +16,6 @@ dns:
     - tls://dns.google:853
 proxies:
   - {name: 🇭🇰 香港01, server: 154.12.60.110, port: 443, reality-opts: {public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14}, client-fingerprint: chrome, type: vless, uuid: 119934e4-a1da-43e2-bcd3-0b6500285133, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
-  - {name: 🇭🇰 香港02, server: 141.11.218.157, port: 443, reality-opts: {public-key: S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4}, client-fingerprint: chrome, type: vless, uuid: f040fa47-9153-4824-b591-72bdc5f49ad3, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
   - {name: 🇯🇵 日本01, server: 109.176.255.66, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: 3c780a5f-8527-4a99-f637-3795ea037754, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
   - {name: 🇺🇸 美国01, server: 38.58.188.130, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: a00c3f4b-5107-4a0b-e29c-916c5ad19653, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
 
@@ -29,7 +28,6 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇭🇰 香港01
-      - 🇭🇰 香港02
       - 🇯🇵 日本01
       - 🇺🇸 美国01
   - name: ♻️ 自动选择
@@ -39,7 +37,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇭🇰 香港01
-      - 🇭🇰 香港02
       - 🇯🇵 日本01
       - 🇺🇸 美国01
   - name: 🌍 国外媒体
@@ -49,7 +46,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇭🇰 香港01
-      - 🇭🇰 香港02
       - 🇯🇵 日本01
       - 🇺🇸 美国01
   - name: 📲 电报信息
@@ -58,7 +54,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇭🇰 香港01
-      - 🇭🇰 香港02
       - 🇯🇵 日本01
       - 🇺🇸 美国01
   - name: Ⓜ️ 微软服务
@@ -67,7 +62,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🇭🇰 香港01
-      - 🇭🇰 香港02
       - 🇯🇵 日本01
       - 🇺🇸 美国01
   - name: 🍎 苹果服务
@@ -76,7 +70,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇭🇰 香港01
-      - 🇭🇰 香港02
       - 🇯🇵 日本01
       - 🇺🇸 美国01
   - name: 📢 谷歌FCM
@@ -86,7 +79,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇭🇰 香港01
-      - 🇭🇰 香港02
       - 🇯🇵 日本01
       - 🇺🇸 美国01
   - name: 🎯 全球直连
@@ -112,7 +104,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇭🇰 香港01
-      - 🇭🇰 香港02
       - 🇯🇵 日本01
       - 🇺🇸 美国01
 rules:
