@@ -15,9 +15,9 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇭🇰 香港01, server: 154.12.60.110, port: 443, reality-opts: {public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14}, client-fingerprint: chrome, type: vless, uuid: 119934e4-a1da-43e2-bcd3-0b6500285133, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
-  - {name: 🇯🇵 日本01, server: 109.176.255.66, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: 3c780a5f-8527-4a99-f637-3795ea037754, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
-  - {name: 🇺🇸 美国01, server: 38.58.188.130, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: a00c3f4b-5107-4a0b-e29c-916c5ad19653, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
+  - {name: 🇭🇰 香港01, server: 154.12.60.110, port: 443, reality-opts: {public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14}, client-fingerprint: chrome, type: vless, uuid: 119934e4-a1da-43e2-bcd3-0b6500285133, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: false}
+  - {name: 🇯🇵 日本01, server: 109.176.255.66, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: 3c780a5f-8527-4a99-f637-3795ea037754, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: false}
+  - {name: 🇺🇸 美国01, server: 38.58.188.130, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: a00c3f4b-5107-4a0b-e29c-916c5ad19653, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: false}
 
 
 
