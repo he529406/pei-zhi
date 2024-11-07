@@ -15,7 +15,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇭🇰 香港01, server: 154.12.60.110, port: 443, reality-opts: {public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14}, client-fingerprint: chrome, type: vless, uuid: 119934e4-a1da-43e2-bcd3-0b6500285133, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
+  - {name: 🇭🇰 香港01, server: 154.12.60.110, port: 443, reality-opts: {public-key: IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM}, client-fingerprint: chrome, type: vless, uuid: 966779fd-778e-4829-b16a-f9a23a527b46, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
   - {name: 🇯🇵 日本01, server: 109.176.255.66, port: 443, reality-opts: {public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM}, client-fingerprint: chrome, type: vless, uuid: f9c3bfc7-34a1-4274-f75b-72da309bac90, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
   - {name: 🇺🇸 美国01, server: 38.58.188.130, port: 443, reality-opts: {public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w}, client-fingerprint: chrome, type: vless, uuid: e259c3c6-bdd9-45b0-9104-fcaceeeba090, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
 
