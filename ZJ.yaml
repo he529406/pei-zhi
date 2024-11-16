@@ -16,10 +16,10 @@ dns:
     - tls://dns.google:853
 proxies:
   - {name: 🇭🇰 香港01 0x, server: 154.12.60.110, port: 443, reality-opts: {public-key: IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM}, client-fingerprint: chrome, type: vless, uuid: 966779fd-778e-4829-b16a-f9a23a527b46, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
-  - {name: 🇯🇵 日本01 0x, server: 109.176.255.66, port: 443, reality-opts: {public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM}, client-fingerprint: chrome, type: vless, uuid: f9c3bfc7-34a1-4274-f75b-72da309bac90, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
+  - {name: 🇯🇵 日本01 0x, server: 109.176.255.153, port: 443, reality-opts: {public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg}, client-fingerprint: chrome, type: vless, uuid: 521f1fc6-0aeb-4a6c-9dff-381a4dbd9ef8, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
   - {name: 🇺🇸 美国01 0x, server: 38.58.188.130, port: 443, reality-opts: {public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w}, client-fingerprint: chrome, type: vless, uuid: e259c3c6-bdd9-45b0-9104-fcaceeeba090, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
   - {name: 🇭🇰 香港02 10x, server: shhk1-08051752.520300.xyz, port: 53081, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: bszHRxjhfyfHHRPbUQLFFcbns6Xnbt2eAn9ektNSquh3, tfo: false, udp: true}
-  - {name: 🇯🇵 日本02 15x, server: shjp1-08051751.520300.xyz, port: 41998, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: XaaVro92f5FvE8A4jIkKmnQhJtQQNGfghHhhOohvEzyJ, tfo: false, udp: true}
+  - {name: 🇯🇵 日本02 15x, server: shjp1-08051751.520300.xyz, port: 41998, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: d371SLIph4Z2zkHLXT0VqlPglqoxzWfmmH4ecR3sYBWc, tfo: false, udp: true}
   - {name: 🇺🇸 美国02 15x, server: shjp1-08051751.520300.xyz, port: 45342, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: cvCrNnjF8lVoeWcEkItMCjqjzvRsdoI7rvx0lMtlOOTK, tfo: false, udp: true}
 
 
