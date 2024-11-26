@@ -17,7 +17,6 @@ dns:
 proxies:
   - {name: 🇭🇰 香港01, server: zshk.hesurf.cn, port: 443, reality-opts: {public-key: IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM}, client-fingerprint: chrome, type: vless, uuid: 966779fd-778e-4829-b16a-f9a23a527b46, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
   - {name: 🇯🇵 日本01, server: zsjp.hesurf.cn, port: 443, reality-opts: {public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg}, client-fingerprint: chrome, type: vless, uuid: 521f1fc6-0aeb-4a6c-9dff-381a4dbd9ef8, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
-  - {name: 🇺🇸 美国01, server: zsus.hesurf.cn, port: 443, reality-opts: {public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w}, client-fingerprint: chrome, type: vless, uuid: e259c3c6-bdd9-45b0-9104-fcaceeeba090, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp, udp: true}
 
 
 
