@@ -33,8 +33,6 @@ proxy-groups:
       - 🇭🇰 香港02 10x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
-      - 🇺🇸 美国02 15x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -45,8 +43,6 @@ proxy-groups:
       - 🇭🇰 香港02 10x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
-      - 🇺🇸 美国02 15x
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -57,8 +53,6 @@ proxy-groups:
       - 🇭🇰 香港02 10x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
-      - 🇺🇸 美国02 15x
   - name: 📲 电报信息
     type: select
     proxies:
@@ -68,8 +62,6 @@ proxy-groups:
       - 🇭🇰 香港02 10x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
-      - 🇺🇸 美国02 15x
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -79,8 +71,6 @@ proxy-groups:
       - 🇭🇰 香港02 10x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
-      - 🇺🇸 美国02 15x
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -90,8 +80,6 @@ proxy-groups:
       - 🇭🇰 香港02 10x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
-      - 🇺🇸 美国02 15x
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -102,8 +90,6 @@ proxy-groups:
       - 🇭🇰 香港02 10x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
-      - 🇺🇸 美国02 15x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,8 +116,6 @@ proxy-groups:
       - 🇭🇰 香港02 10x
       - 🇯🇵 日本01 0x
       - 🇯🇵 日本02 15x
-      - 🇺🇸 美国01 0x
-      - 🇺🇸 美国02 15x
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
