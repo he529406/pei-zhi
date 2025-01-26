@@ -15,7 +15,6 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇭🇰 HK-VKVM, server: zshk.hesurf.cn, port: 14777, client-fingerprint: chrome, type: vless, uuid: 71e41271-c630-47d1-9e75-03860091f166, tls: true, tfo: false, skip-cert-verify: false, servername: zshk.hesurf.cn, network: ws, ws-opts: {path: /71e41271, headers: {Host: zshk.hesurf.cn}}, udp: true}
   - {name: 🇸🇬 SG-VKVM, server: zssg.hesurf.cn, port: 14777, client-fingerprint: chrome, type: vless, uuid: 3afc9655-edf3-4924-b39c-bc13d9016554, tls: true, tfo: false, skip-cert-verify: false, servername: zssg.hesurf.cn, network: ws, ws-opts: {path: /3afc9655, headers: {Host: zssg.hesurf.cn}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
