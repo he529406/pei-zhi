@@ -60,6 +60,7 @@ rule-providers:
 
 # 分流Policy 
 rules:
+  - DOMAIN,ds4837.mobaiemby.site,DIRECT
   - DOMAIN,myg.mobaiemby.site,DIRECT
   - RULE-SET,AdBlock,AdBlock
   - RULE-SET,OpenAi,OpenAi
