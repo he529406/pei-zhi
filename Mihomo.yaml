@@ -65,7 +65,7 @@ rules:
   - DOMAIN-SUFFIX,emby-myg-de.vfing.de,DIRECT
   - DOMAIN-SUFFIX,ds4837.mobaiemby.site,DIRECT
   - DOMAIN-SUFFIX,mygcn.204cloud.com.site,DIRECT
-  - DOMAIN-SUFFIX,myg.mobaiemby.site,手动切换
+  - DOMAIN-SUFFIX,myg.mobaiemby.site,Emby服务
   - RULE-SET,AdBlock,AdBlock
   - RULE-SET,OpenAi,OpenAi
   - RULE-SET,Emby,Emby服务
