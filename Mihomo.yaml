@@ -62,7 +62,7 @@ rule-providers:
 
 # 分流Policy 
 rules:
-  - DOMAIN-SUFFIX,alist.723333.xyz,低倍率节点
+  - DOMAIN-SUFFIX,cd2.723333.xyz,DIRECT
   - DOMAIN-SUFFIX,emby.723333.xyz,DIRECT
   - RULE-SET,AdBlock,AdBlock
   - RULE-SET,OpenAi,OpenAi
