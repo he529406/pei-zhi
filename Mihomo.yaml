@@ -62,8 +62,6 @@ rule-providers:
 
 # 分流Policy 
 rules:
-  - DOMAIN-SUFFIX,embyhk.723333.xyz,DIRECT
-  - DOMAIN-SUFFIX,embyus.723333.xyz,Emby服务
   - RULE-SET,AdBlock,AdBlock
   - RULE-SET,OpenAi,OpenAi
   - RULE-SET,Emby,Emby服务
