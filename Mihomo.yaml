@@ -60,8 +60,8 @@ rule-providers:
 
 # 分流Policy 
 rules:
+  - DOMAIN-SUFFIX,bgp.tools,DIRECT
   - DOMAIN-SUFFIX,embyus.723333.xyz,DIRECT
-  - DOMAIN-SUFFIX,embyhk.723333.xyz,DIRECT
   - RULE-SET,AdBlock,AdBlock
   - RULE-SET,OpenAi,OpenAi
   - RULE-SET,BiliBili,哔哩哔哩
