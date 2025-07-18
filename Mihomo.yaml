@@ -13,19 +13,10 @@
 # @ConfigUrl         https://github.com/ddgksf2013/Profile/raw/master/MihomoParty.yaml
 #==========================================
 
-proxies:
-  - {name: 🇭🇰 Akile-HK, server: 154.83.87.128, port: 52941, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: zl2YBX9GUl0ZOS41kHPSpZ6oHGxw130eZ0bbaxZOkr9y, tfo: false, udp: true}
-  - name: "香港节点"
-    dialer-proxy: dialer
-  - name: "🇭🇰 Akile-HK"
+
 
   
 proxy-groups:
-  - name: YToo-Akile-HK
-    type: select
-    proxies:
-    - 🇭🇰 Akile-HK
-
 #分流分组
   - {name: 手动切换, type: select, include-all: true, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png }
   - {name: 电报消息, type: select, proxies: [手动切换, DIRECT, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png }
