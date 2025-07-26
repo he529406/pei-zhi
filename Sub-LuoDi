@@ -71,8 +71,8 @@ async function operator(proxies = [], targetPlatform, context) {
   const mmdb_country_path = $arguments.mmdb_country_path
   const mmdb_asn_path = $arguments.mmdb_asn_path
   const regex = $arguments.regex
-  let format = $arguments.format || '{{proxy.name}} - {{api.org}}'
-  let url = $arguments.api || 'https://ipinfo.io/json'
+  let format = $arguments.format || '{{proxy.name}} - {{api.isp}}'
+  let url = $arguments.api || 'https://api.ip.sb/geoip'
   let utils
   if (internal) {
     utils = new ProxyUtils.MMDB({ country: mmdb_country_path, asn: mmdb_asn_path })
