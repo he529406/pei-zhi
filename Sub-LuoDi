@@ -71,7 +71,7 @@ async function operator(proxies = [], targetPlatform, context) {
   const mmdb_country_path = $arguments.mmdb_country_path
   const mmdb_asn_path = $arguments.mmdb_asn_path
   const regex = $arguments.regex
-  let format = $arguments.format || '{{proxy.name}} - {{api.isp}}'
+  let format = $arguments.format || '{{proxy.name}} - {{api.asname}}'
   let url = $arguments.api || 'http://ip-api.com/json?lang=zh-CN'
   let utils
   if (internal) {
