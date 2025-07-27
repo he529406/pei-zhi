@@ -71,8 +71,8 @@ async function operator(proxies = [], targetPlatform, context) {
   const mmdb_country_path = $arguments.mmdb_country_path
   const mmdb_asn_path = $arguments.mmdb_asn_path
   const regex = $arguments.regex
-  let format = $arguments.format || '{{api.country}} {{api.asOrganization}} - {{proxy.name}'
-  let url = $arguments.api || 'https://speed.cloudflare.com/meta'
+  let format = $arguments.format || '{{api.country}} {{api.isp}} - {{proxy.name}}'
+  let url = $arguments.api || 'http://ip-api.com/json?lang=zh-CN'
   let utils
   if (internal) {
     utils = new ProxyUtils.MMDB({ country: mmdb_country_path, asn: mmdb_asn_path })
