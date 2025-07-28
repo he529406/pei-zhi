@@ -65,11 +65,9 @@ rule-providers:
 
 # 分流Policy 
 rules:
-  - DOMAIN-SUFFIX,lyyplay.xxlb.net,低倍率节点
-  - DOMAIN-SUFFIX,lyy.emby.moe,低倍率节点
-  - DOMAIN-SUFFIX,akile4837.723333.xyz,DIRECT
+  - DOMAIN-SUFFIX,lyyplay.xxlb.net,倍率节点
+  - DOMAIN-SUFFIX,lyy.emby.moe,倍率节点
   - DOMAIN-SUFFIX,bgp.tools,DIRECT
-  - DOMAIN-SUFFIX,embyus.723333.xyz,低倍率节点
   - RULE-SET,AdBlock,AdBlock
   - RULE-SET,OpenAi,OpenAi
   - RULE-SET,BiliBili,哔哩哔哩
