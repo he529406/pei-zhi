@@ -62,7 +62,7 @@ proxy-providers:
     path: ./proxy_providers/sub.yaml
 
 proxies: 
-  - {name: Akile-HK, server: 154.83.87.128, port: 52941, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: zl2YBX9GUl0ZOS41kHPSpZ6oHGxw130eZ0bbaxZOkr9y, tfo: false, udp: true}
+  - {name: 🇭🇰 Akile-HK, server: 154.83.87.128, port: 52941, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: zl2YBX9GUl0ZOS41kHPSpZ6oHGxw130eZ0bbaxZOkr9y, tfo: false, udp: true}
 
 
 proxy-groups:
@@ -80,7 +80,7 @@ proxy-groups:
   - {name: AdBlock,  type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png }
   - { name: "链式代理", type: relay, proxies: ["线路节点", "落地节点"] }
   - { name: "线路节点", type: select, proxies: ["倍率节点", "香港节点"] }
-  - { name: "落地节点", type: select, proxies: ["Akile-HK"] }
+  - { name: "落地节点", type: select, proxies: ["🇭🇰 Akile-HK"] }
 #节点分组
   - {name: 倍率节点, type: select, include-all: true, interval: 600, tolerance: 50,  filter: "直连|日用|0.2|0.3", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
   - {name: 家宽节点, type: select, include-all: true, interval: 600, tolerance: 50,  filter: "家宽", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/China.png }
