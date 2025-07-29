@@ -55,7 +55,7 @@ i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   Sub:
     <<: *a1
-    url:https://api.rss.xfsub.cc/?f79eb4dbb8bfb95adff08d5c4c2b3d8a
+    url: https://ai-163cdn.com/sub?target=clash&new_name=true&emoji=true&clash.doh=true&filename=YToo_SS&udp=false&url=https%3A%2F%2Fapi.ytoo.xyz%2Fosubscribe.php%3Fsid%3D107057%26token%3D98I9JEsvcGyB%26sip002%3D1
 
 
     # URL后面填写格式1: 直接填写你的机场Clash订阅[推荐此种方式，避免订阅泄露
