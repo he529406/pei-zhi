@@ -63,16 +63,13 @@ proxy-providers:
     path: ./proxy_providers/sub.yaml
 
 proxies: 
+
   - {name: Akile-HK, server: 154.83.87.128, port: 52941, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: zl2YBX9GUl0ZOS41kHPSpZ6oHGxw130eZ0bbaxZOkr9y, tfo: false, udp: true}
 
 
 proxy-groups:
-  - { name: "链式代理", type: relay, proxies: ["线路节点", "落地节点"] }
-  - { name: "线路节点", type: select, proxies: ["倍率节点", "香港节点"] }
-  - { name: "落地节点", type: select, proxies: ["Akile-HK"] }
-
-
 #分流分组
+
   - {name: 手动切换, type: select, include-all: true, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png }
   - {name: 电报消息, type: select, proxies: [链式代理, 手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png }
   - {name: YouTube, type: select, proxies: [链式代理, 手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png }
@@ -83,7 +80,9 @@ proxy-groups:
   - {name: 微软服务, type: select, proxies: [链式代理, 手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png }
   - {name: 兜底分流, type: select, proxies: [链式代理, 手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
   - {name: AdBlock,  type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png }
-
+  - { name: "链式代理", type: relay, proxies: ["线路节点", "落地节点"] }
+  - { name: "线路节点", type: select, proxies: ["倍率节点", "香港节点"] }
+  - { name: "落地节点", type: select, proxies: ["Akile-HK"] }
 #节点分组
 
   - {name: 倍率节点, type: select, include-all: true, interval: 600, tolerance: 50,  filter: "直连|日用|0.2|0.3", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
