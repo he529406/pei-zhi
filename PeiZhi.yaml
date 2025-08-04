@@ -55,7 +55,7 @@ i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   Sub:
     <<: *a1
-    url: https://sub.723333.xyz/IS66pZTOgVsNYjJYKB4O/download/collection/111
+    url: https://sub.723333.xyz/IS66pZTOgVsNYjJYKB4O/download/LYY
 
     # URL后面填写格式1: 直接填写你的机场Clash订阅[推荐此种方式，避免订阅泄露
     # URL后面填写格式2[集合订阅]：https://api.nexconvert.com/sub?target=clash&url=请手动填入你的订阅(多机场订阅用|分割即可)&emoji=true&list=true&new_name=true&udp=false
@@ -63,6 +63,7 @@ proxy-providers:
 
 proxies: 
   - {name: 🇭🇰 Akile-HK, server: 154.83.87.128, port: 52941, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: yD5hBpGM44, tfo: false, udp: true}
+  - {name: 🇭🇰 IX-HK, server: 47.112.26.129, port: 52941, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: hVOxrMEZji, tfo: false, udp: true}
 
 
 proxy-groups:
@@ -126,6 +127,7 @@ rules:
   - RULE-SET,Download,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
+
 
 
 
