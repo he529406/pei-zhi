@@ -62,7 +62,7 @@ proxy-providers:
     path: ./proxy_providers/sub.yaml
 
 proxies: 
-  - {name: 🇭🇰 Akile-HK, server: 154.83.87.128, port: 52941, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: zl2YBX9GUl0ZOS41kHPSpZ6oHGxw130eZ0bbaxZOkr9y, tfo: false, udp: true}
+  - {name: 🇭🇰 Akile-HK, server: 154.83.87.128, port: 52941, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: yD5hBpGM44, tfo: false, udp: true}
 
 
 proxy-groups:
@@ -126,6 +126,7 @@ rules:
   - RULE-SET,Download,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
+
 
 
 
