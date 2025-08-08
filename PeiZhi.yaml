@@ -68,14 +68,14 @@ proxy-groups:
 
 #分流分组
   - {name: 手动切换, type: select, include-all: true, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png }
-  - {name: 电报消息, type: select, proxies: [链式代理, 手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png }
-  - {name: YouTube, type: select, proxies: [链式代理, 手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png }
-  - {name: 全球加速, type: select, proxies: [链式代理, 手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }
-  - {name: 国际媒体, type: select, proxies: [链式代理, 手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png }
-  - {name: OpenAi,   type: select, proxies: [链式代理, 手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
-  - {name: 游戏平台, type: select, proxies: [链式代理, 手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/GAME.png }
-  - {name: 微软服务, type: select, proxies: [链式代理, 手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png }
-  - {name: 兜底分流, type: select, proxies: [链式代理, 手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
+  - {name: 电报消息, type: select, proxies: [手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png }
+  - {name: YouTube, type: select, proxies: [手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png }
+  - {name: 全球加速, type: select, proxies: [手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }
+  - {name: 国际媒体, type: select, proxies: [手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png }
+  - {name: OpenAi,   type: select, proxies: [手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
+  - {name: 游戏平台, type: select, proxies: [手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/GAME.png }
+  - {name: 微软服务, type: select, proxies: [手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png }
+  - {name: 兜底分流, type: select, proxies: [手动切换, DIRECT, 家宽节点, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 倍率节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
   - {name: AdBlock,  type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png }
 #  - { name: "链式代理", type: relay, proxies: ["线路节点", "落地节点"] }
 #  - { name: "线路节点", type: select, proxies: ["倍率节点", "香港节点"] }
@@ -125,6 +125,7 @@ rules:
   - RULE-SET,Download,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
+
 
 
 
