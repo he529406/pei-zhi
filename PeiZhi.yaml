@@ -62,7 +62,7 @@ proxy-providers:
     path: ./proxy_providers/sub.yaml
 
 proxies: 
-
+  - {name: 🇺🇸 Akile-US-直连-p0zf3go3, server: akus.723333.xyz, port: 52941, client-fingerprint: chrome, type: vless, uuid: a4ed00b0-cd43-4311-9e2a-c3ddee7d040d, tls: true, alpn: [h2%2Chttp%2F1.1], tfo: false, skip-cert-verify: true, network: tcp, udp: true}
 
 proxy-groups:
 
@@ -126,6 +126,7 @@ rules:
   - RULE-SET,Download,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
+
 
 
 
