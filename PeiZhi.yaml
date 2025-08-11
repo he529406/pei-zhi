@@ -55,7 +55,7 @@ i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   Sub:
     <<: *a1
-    url: https://1da5d8a2743d.ai-163cdn.com/sub?target=clash&new_name=true&emoji=true&clash.doh=true&filename=YToo_SS&udp=false&url=https%3A%2F%2Fapi.ytoo.xyz%2Fosubscribe.php%3Fsid%3D107057%26token%3DKN0Xl6M2txVg%26sip002%3D1
+    url: 
     # URL后面填写格式1: 直接填写你的机场Clash订阅[推荐此种方式，避免订阅泄露
     # URL后面填写格式2[集合订阅]：https://api.nexconvert.com/sub?target=clash&url=请手动填入你的订阅(多机场订阅用|分割即可)&emoji=true&list=true&new_name=true&udp=false
     path: ./proxy_providers/sub.yaml
@@ -122,6 +122,7 @@ rules:
   - RULE-SET,Download,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
+
 
 
 
