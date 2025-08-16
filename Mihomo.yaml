@@ -59,7 +59,7 @@ rule-providers:
 
 # 分流Policy 
 rules:
-#  - DOMAIN-SUFFIX,lite.cn2gias.uk,倍率节点
+  - DOMAIN-SUFFIX,lite.cn2gias.uk,倍率节点
   - DOMAIN-SUFFIX,bgp.tools,DIRECT
   - RULE-SET,YouTube,YouTube
   - RULE-SET,AdBlock,AdBlock
@@ -76,6 +76,7 @@ rules:
   - RULE-SET,Download,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
+
 
 
 
