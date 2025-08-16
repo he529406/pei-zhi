@@ -31,7 +31,7 @@ proxy-groups:
 
 #节点分组
 
-  - {name: 倍率节点, type: select, include-all: true, interval: 600, tolerance: 50,  filter: "直连|0.2", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
+  - {name: 倍率节点, type: select, include-all: true, interval: 600, tolerance: 50,  filter: "直连|0x", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
   - {name: 家宽节点, type: select, include-all: true, interval: 600, tolerance: 50,  filter: "家宽", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/China.png }
   - {name: 自动选择, type: url-test, include-all: true, interval: 600, tolerance: 50,  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
   - {name: 香港节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
@@ -76,6 +76,7 @@ rules:
   - RULE-SET,Download,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
+
 
 
 
