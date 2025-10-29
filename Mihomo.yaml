@@ -60,6 +60,7 @@ rule-providers:
 
 # 分流Policy 
 rules:
+  - DOMAIN-SUFFIX,fastytcdn.com,🇭🇰香港节点
   - DOMAIN-SUFFIX,lite.cn2gias.uk,Emby节点
   - DOMAIN-SUFFIX,bgp.tools,DIRECT  
   - RULE-SET,Binance,Binance
@@ -78,6 +79,7 @@ rules:
   - RULE-SET,Download,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
+
 
 
 
