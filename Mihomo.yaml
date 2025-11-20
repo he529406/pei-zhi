@@ -42,8 +42,8 @@ rule-providers:
 
 # 分流Policy 
 rules:
-  - DOMAIN-SUFFIX,savenow.to,YouTube
-  - DOMAIN-SUFFIX,fastytcdn.com,YouTube
+  - DOMAIN-SUFFIX,savenow.to,🇺🇸美国节点
+  - DOMAIN-SUFFIX,fastytcdn.com,🇺🇸美国节点
   - DOMAIN-SUFFIX,emby.bangumi.ca,Emby节点
   - DOMAIN-SUFFIX,lite.cn2gias.uk,Emby节点
   - DOMAIN-SUFFIX,bgp.tools,DIRECT  
@@ -63,6 +63,7 @@ rules:
   - RULE-SET,Download,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
+
 
 
 
