@@ -1,7 +1,7 @@
 proxy-groups:
 #分流分组
   - {name: Emby节点, type: select, proxies: [手动切换, DIRECT, 自动选择, 🇭🇰香港节点, 🇯🇵日本节点, 🇺🇸美国节点, 🇸🇬狮城节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
-  - {name: 🇸🇬狮城节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "🇸🇬|狮城|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
+  - {name: 🇭🇰香港节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "🇭🇰|港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }      
   - {name: Binance, type: select, proxies: [手动切换, DIRECT, 自动选择, 🇭🇰香港节点, 🇯🇵日本节点, 🇹🇼台湾节点, 🇺🇸美国节点, 🇸🇬狮城节点], icon: https://user-images.githubusercontent.com/12424618/54043975-b6cdb800-4182-11e9-83bd-0cd2eb757c6e.png }
   - {name: 电报消息, type: select, proxies: [手动切换, DIRECT, 自动选择, 🇭🇰香港节点, 🇯🇵日本节点, 🇹🇼台湾节点, 🇺🇸美国节点, 🇸🇬狮城节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png }
   - {name: YouTube,  type: select, proxies: [手动切换, DIRECT, 自动选择, 🇭🇰香港节点, 🇯🇵日本节点, 🇹🇼台湾节点, 🇺🇸美国节点, 🇸🇬狮城节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png }
@@ -17,7 +17,7 @@ proxy-groups:
 
   - {name: 自动选择, type: url-test, include-all: true, interval: 600, tolerance: 50,  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
   - {name: 手动切换, type: select, include-all: true, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png }
-  - {name: 🇭🇰香港节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "🇭🇰|港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }      
+  - {name: 🇸🇬狮城节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "🇸🇬|狮城|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
   - {name: 🇹🇼台湾节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "🇨🇳|台|湾|TW|(?i)Taiwan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png }
   - {name: 🇯🇵日本节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "🇯🇵|日本|东京|JP|(?i)Japan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png }
   - {name: 🇺🇸美国节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "🇺🇸|美|US|(?i)States|American", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
@@ -63,6 +63,7 @@ rules:
   - RULE-SET,Download,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
+
 
 
 
