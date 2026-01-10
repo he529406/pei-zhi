@@ -45,7 +45,6 @@ rules:
   - DOMAIN-SUFFIX,liminalnet.com,Emby节点
   - DOMAIN-SUFFIX,bangumi.ca,Emby节点
   - DOMAIN-SUFFIX,cn2gias.uk,Emby节点
-  - DOMAIN-SUFFIX,bgp.tools,DIRECT  
   - RULE-SET,Binance,Binance
   - RULE-SET,YouTube,YouTube
   - RULE-SET,AdBlock,AdBlock
@@ -62,6 +61,7 @@ rules:
   - RULE-SET,Download,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
+
 
 
 
