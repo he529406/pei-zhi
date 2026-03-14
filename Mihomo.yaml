@@ -1,5 +1,4 @@
 proxy-groups:
-#分流分组
   - {name: Emby节点, type: select,  filter: "VH|Akile|CYBERVERSE", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
   - {name: 手动切换, type: select, include-all: true, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png }
   - {name: Binance, type: select, proxies: [手动切换, DIRECT, 自动选择, 🇭🇰香港节点, 🇯🇵日本节点, 🇹🇼台湾节点, 🇸🇬狮城节点, 🇺🇸美国节点], icon: https://user-images.githubusercontent.com/12424618/54043975-b6cdb800-4182-11e9-83bd-0cd2eb757c6e.png }
@@ -13,7 +12,6 @@ proxy-groups:
   - {name: 兜底分流, type: select, proxies: [手动切换, DIRECT, 自动选择, 🇭🇰香港节点, 🇯🇵日本节点, 🇹🇼台湾节点, 🇸🇬狮城节点, 🇺🇸美国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
   - {name: AdBlock,  type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png }
 
-#节点分组
 
   - {name: 自动选择, type: url-test, include-all: true, interval: 600, tolerance: 50,  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
   - {name: 🇭🇰香港节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "🇭🇰|港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }      
@@ -23,7 +21,6 @@ proxy-groups:
   - {name: 🇺🇸美国节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "🇺🇸|美|US|(?i)States|American", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
 
 
-# 分流规则 
 rule-providers:  
   AdBlock:     {behavior: domain,    interval: 86400, format: text, type: http, url: https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt ,                                           path: ./ruleset/anti-ad-clash.txt }
   Binance:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Binance/Binance.yaml ,         path: ./ruleset/Binance.yaml }
@@ -40,7 +37,7 @@ rule-providers:
   Download:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml ,                  path: ./ruleset/Download.yaml     }
   ChinaIP:     {behavior: ipcidr,    interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/clash-rule-provider.yml ,                                     path: ./ruleset/ChinaIP.yaml      }
 
-# 分流Policy 
+
 rules:
   - DOMAIN-SUFFIX,bangumi.ca,Emby节点
   - DOMAIN-SUFFIX,cn2gias.uk,Emby节点
