@@ -39,6 +39,7 @@ rule-providers:
 
 
 rules:
+  - IP-CIDR,188.239.23.126/32,DIRECT
   - DOMAIN-SUFFIX,bangumi.ca,Emby节点
   - DOMAIN-SUFFIX,cn2gias.uk,Emby节点
   - RULE-SET,Binance,Binance
