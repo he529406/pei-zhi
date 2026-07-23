@@ -1,3 +1,220 @@
+# 由可视化配置自动生成
+# 代理模式: 智能分流
+# 节点策略: 自动选择
+mixed-port: 7890
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+find-process-mode: 'off'
+# 性能优化
+unified-delay: true
+tcp-concurrent: true
+global-client-fingerprint: chrome
+keep-alive-idle: 600
+keep-alive-interval: 15
+disable-keep-alive: false
+# 嗅探配置
+sniffer:
+  enable: false
+  sniff:
+    HTTP:
+      ports: []
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  skip-domain:
+    - "+.baidu.com"
+# TUN 模式
+tun:
+  enable: true
+  stack: mixed
+  dns-hijack: ["any:53", "tcp://any:53"]
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+# 配置持久化
+profile:
+  store-selected: true
+  store-fake-ip: false
+# DNS 配置
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  respect-rules: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    # 网络连接检测
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "time.*.com"
+    - "+.market.xiaomi.com"
+    # 路由器管理页面
+    - "instant.arubanetworks.com"
+    - "setmeup.arubanetworks.com"
+    - "asusrouter.com"
+    - "router.asus.com"
+    - "www.asusrouter.com"
+    - "oasisauth.h3c.com"
+    - "routerlogin.com"
+    - "www.routerlogin.com"
+    - "tplogin.cn"
+    - "miwifi.com"
+    - "www.miwifi.com"
+    - "+.hiwifi.com"
+    - "+.tplinkwifi.net"
+    - "+.tendawifi.com"
+    - "+.leike.cc"
+    - "+.plex.direct"
+    - "+.router.ctc"
+    - "+.phicomm.me"
+    - "+.peiluyou.com"
+    - "+.zte.home"
+    - "+.my.router"
+    # 本地域名和保留域名
+    - "+.internal"
+    - "+.localdomain"
+    - "+.example"
+    - "+.invalid"
+    - "+.localhost"
+    - "+.test"
+    - "+.local"
+    - "+.lan"
+    - "+.ts.net"
+    - "+.home.arpa"
+    # QQ 本地服务
+    - "localhost.ptlogin2.qq.com"
+    - "+.localhost.sec.qq.com"
+    # Steam 测试域名
+    - "+.test.steampowered.com"
+    # IPv4 反向解析
+    - "+.0.in-addr.arpa"
+    - "+.10.in-addr.arpa"
+    - "+.127.in-addr.arpa"
+    - "+.168.192.in-addr.arpa"
+    - "+.254.169.in-addr.arpa"
+    - "+.255.255.255.255.in-addr.arpa"
+    # 172.16.0.0/12 反向解析
+    - "+.16.172.in-addr.arpa"
+    - "+.17.172.in-addr.arpa"
+    - "+.18.172.in-addr.arpa"
+    - "+.19.172.in-addr.arpa"
+    - "+.20.172.in-addr.arpa"
+    - "+.21.172.in-addr.arpa"
+    - "+.22.172.in-addr.arpa"
+    - "+.23.172.in-addr.arpa"
+    - "+.24.172.in-addr.arpa"
+    - "+.25.172.in-addr.arpa"
+    - "+.26.172.in-addr.arpa"
+    - "+.27.172.in-addr.arpa"
+    - "+.28.172.in-addr.arpa"
+    - "+.29.172.in-addr.arpa"
+    - "+.30.172.in-addr.arpa"
+    - "+.31.172.in-addr.arpa"
+    # 100.64.0.0/10 (CGNAT) 反向解析
+    - "+.64.100.in-addr.arpa"
+    - "+.65.100.in-addr.arpa"
+    - "+.66.100.in-addr.arpa"
+    - "+.67.100.in-addr.arpa"
+    - "+.68.100.in-addr.arpa"
+    - "+.69.100.in-addr.arpa"
+    - "+.70.100.in-addr.arpa"
+    - "+.71.100.in-addr.arpa"
+    - "+.72.100.in-addr.arpa"
+    - "+.73.100.in-addr.arpa"
+    - "+.74.100.in-addr.arpa"
+    - "+.75.100.in-addr.arpa"
+    - "+.76.100.in-addr.arpa"
+    - "+.77.100.in-addr.arpa"
+    - "+.78.100.in-addr.arpa"
+    - "+.79.100.in-addr.arpa"
+    - "+.80.100.in-addr.arpa"
+    - "+.81.100.in-addr.arpa"
+    - "+.82.100.in-addr.arpa"
+    - "+.83.100.in-addr.arpa"
+    - "+.84.100.in-addr.arpa"
+    - "+.85.100.in-addr.arpa"
+    - "+.86.100.in-addr.arpa"
+    - "+.87.100.in-addr.arpa"
+    - "+.88.100.in-addr.arpa"
+    - "+.89.100.in-addr.arpa"
+    - "+.90.100.in-addr.arpa"
+    - "+.91.100.in-addr.arpa"
+    - "+.92.100.in-addr.arpa"
+    - "+.93.100.in-addr.arpa"
+    - "+.94.100.in-addr.arpa"
+    - "+.95.100.in-addr.arpa"
+    - "+.96.100.in-addr.arpa"
+    - "+.97.100.in-addr.arpa"
+    - "+.98.100.in-addr.arpa"
+    - "+.99.100.in-addr.arpa"
+    - "+.100.100.in-addr.arpa"
+    - "+.101.100.in-addr.arpa"
+    - "+.102.100.in-addr.arpa"
+    - "+.103.100.in-addr.arpa"
+    - "+.104.100.in-addr.arpa"
+    - "+.105.100.in-addr.arpa"
+    - "+.106.100.in-addr.arpa"
+    - "+.107.100.in-addr.arpa"
+    - "+.108.100.in-addr.arpa"
+    - "+.109.100.in-addr.arpa"
+    - "+.110.100.in-addr.arpa"
+    - "+.111.100.in-addr.arpa"
+    - "+.112.100.in-addr.arpa"
+    - "+.113.100.in-addr.arpa"
+    - "+.114.100.in-addr.arpa"
+    - "+.115.100.in-addr.arpa"
+    - "+.116.100.in-addr.arpa"
+    - "+.117.100.in-addr.arpa"
+    - "+.118.100.in-addr.arpa"
+    - "+.119.100.in-addr.arpa"
+    - "+.120.100.in-addr.arpa"
+    - "+.121.100.in-addr.arpa"
+    - "+.122.100.in-addr.arpa"
+    - "+.123.100.in-addr.arpa"
+    - "+.124.100.in-addr.arpa"
+    - "+.125.100.in-addr.arpa"
+    - "+.126.100.in-addr.arpa"
+    - "+.127.100.in-addr.arpa"
+    # 特殊用途地址反向解析
+    - "+.2.0.192.in-addr.arpa"
+    - "+.100.51.198.in-addr.arpa"
+    - "+.113.0.203.in-addr.arpa"
+    # IPv6 反向解析
+    - "+.d.f.ip6.arpa"
+    - "+.8.e.f.ip6.arpa"
+    - "+.9.e.f.ip6.arpa"
+    - "+.a.e.f.ip6.arpa"
+    - "+.b.e.f.ip6.arpa"
+    - "+.8.b.d.0.1.0.0.2.ip6.arpa"
+    - "+.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa"
+    - "+.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa"
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  proxy-server-nameserver:
+    - https://223.5.5.5/dns-query
+    - https://119.29.29.29/dns-query
+  nameserver:
+    - https://223.5.5.5/dns-query
+    - https://119.29.29.29/dns-query
+  fallback:
+    - https://223.5.5.5/dns-query
+    - https://119.29.29.29/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+    ipcidr:
+      - 240.0.0.0/4
 proxy-groups:
   - {name: Emby节点, type: select, include-all: true, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
   - {name: 手动切换, type: select, include-all: true, filter: "实验|Traffic|Expire", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png }
@@ -12,7 +229,7 @@ proxy-groups:
   - {name: 兜底分流, type: select, proxies: [手动切换, DIRECT, 自动选择, 🇭🇰香港节点, 🇯🇵日本节点, 🇹🇼台湾节点, 🇸🇬狮城节点, 🇺🇸美国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
   - {name: AdBlock,  type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png }
 
-
+  
   - {name: 自动选择, type: url-test, include-all: true, interval: 600, tolerance: 50,  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
   - {name: 🇭🇰香港节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "🇭🇰|港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }      
   - {name: 🇸🇬狮城节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "🇸🇬|狮城|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
@@ -57,57 +274,4 @@ rules:
   - RULE-SET,Download,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
