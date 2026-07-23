@@ -262,8 +262,6 @@ proxy-groups:
   - name: 手动切换
     type: select
     include-all: true
-    filter: "实验|Traffic|Expire"
-    proxies: [手动切换, DIRECT, 自动选择, 🇭🇰香港节点, 🇯🇵日本节点, 🇹🇼台湾节点, 🇸🇬狮城节点, 🇺🇸美国节点]
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
   - name: 守候网络服务
     type: select
