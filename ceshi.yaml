@@ -243,7 +243,7 @@ proxy-groups:
     include-all: true
     interval: 600
     tolerance: 50
-    filter: "🇨🇳|台|湾|TW|(?i)Taiwan"
+    filter: "🇹🇼|台|湾|TW|(?i)Taiwan"
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
   - name: 🇸🇬狮城节点
     type: url-test
@@ -330,7 +330,7 @@ proxy-groups:
     proxies: [手动切换, DIRECT]
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
 
-    rules:
+rules:
   # 守候网络服务
   - DOMAIN-SUFFIX,cn2gias.uk,守候网络服务
   - DOMAIN-KEYWORD,emby,守候网络服务
@@ -4448,7 +4448,7 @@ proxy-groups:
   - DOMAIN,ip.istatmenus.app,国内服务
   - DOMAIN,kc.kexinshe.com,国内服务
   - DOMAIN,ntservicepack.microsoft.com,国内服务
-  - DOMAIN,origin-a.akamaihd.ne,国内服务
+  - DOMAIN,origin-a.akamaihd.net,国内服务
   - DOMAIN,origin-a.akamaihd.net,国内服务
   - DOMAIN,sms.imagetasks.com,国内服务
   - DOMAIN,steamcommunity-a.akamaihd.net,国内服务
